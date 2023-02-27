@@ -73,7 +73,7 @@
         second = second < 10 ? '0' + second : second
         date = date < 10 ? '0' + date : date
 
-        var period = hours < 12 ? 'Pagi' : 'Malam' 
+        var period = hours < 12 ? 'AM' : 'PM'
         time.innerHTML = hours + ':' + minutes + ':' + second + ' ' + period
         dateTime.innerHTML = dayName[day] + ', '  + date + ' ' + monthName[month] + ' ' + year
     }
